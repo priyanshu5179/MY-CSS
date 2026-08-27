@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Selectors</title>
+
+    <style>
+        /* Class selector */
+        .red {
+            background-color: rgb(53, 179, 179);
+        }
+
+        /* Child selector */
+        div > p {
+            color: black;
+            background-color: brown;
+        }
+
+        /* Descendant selector */
+        div p {
+            color: black;
+            background-color: brown;
+        }
+
+        /* ID selector */
+        #green {
+            background-color: rgb(19, 75, 75);
+            color: white;
+        }
+
+        /* Universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo-class selector */
+        a:visited {
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Class selector -->
+    <div class="red">
+        USING CLASS TO FILL COLOR
+
+        <article>
+            <p>Creating child paragraph</p>
+        </article>
+    </div>
+
+    <!-- ID selector -->
+    <div id="green">
+        How to use ID selector
+    </div>
+
+    <!-- Link -->
+    <div>
+        <a href="https://www.google.com">Go to Google</a>
+         <a href="https://www.facebook.com">Go to facebook</a>
+    </div>
+
+</body>
+
+</html>
