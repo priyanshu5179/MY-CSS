@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* this specificity  of the selector is 1 */
+        h1{
+            color: red;
+        }
+         /* this specificity  of the selector is 10 */
+        .cred{
+            color: aliceblue;
+        }
+         /* this specificity  of the selector is 1+10=11add element selector */
+        h1.cpurple{
+            color: blueviolet;
+        }
+         /*  it is attributes this specificity  of the selector is 10 */
+        [data-x="a"]{
+            color: brown;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="yellow cred cpurple"data-x="a">This is my first line </h1>
+    
+</body>
+</html>
